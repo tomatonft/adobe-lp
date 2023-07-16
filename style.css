@@ -407,18 +407,19 @@ margin-top: 16px;
   font-size: 18px;
 }
 
-.point-number {
+.list-number {
   width: fit-content;
   text-align: center;
 }
 
-.point-number span {
+.list-number span {
+  transform: translateY(8px);
   text-transform: uppercase;
   font-size: 12px;
   display: block;
 }
 
-.point-number p {
+.list-number p {
   font-size: 32px;
   /* transform: translateX(-4px); */
 }
@@ -426,3 +427,99 @@ margin-top: 16px;
 .point-text {
   margin-top: 16px;
 }
+
+/* ------------
+    usage
+---------------*/
+
+#usage {
+  background-color: rgba(171, 34, 57, 0.08);
+  padding-bottom: 80px;
+}
+
+.usage-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.usage-title::before,
+.usage-title::after {
+  border-top: 2px solid #AB2239;
+  content: "";
+  width: 20%;
+}
+
+.usage-title h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.usage-description {
+  padding-left: 44px;
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.usage-description li {
+  width: calc((100% - 80px) / 2);
+  position: relative;
+}
+
+
+.usage-number {
+  color: #AB2239;
+  background-color: #fff;
+  border: 1px solid #AB2239;
+  border-radius: 50%;
+  width: 20%;
+  padding: calc(10% - 35.33475px) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* top: -44px;
+  left: -44px; */
+  top: -10%;
+  left: -10%;
+}
+
+.usage-text {
+  font-size: 20px;
+  margin-top: 24px;
+}
+
+.usage-point {
+  background-color: #fff;
+  width: 40%;
+  border-radius: 16px;
+  padding: 60px 32px 32px;
+  border: 2px solid #AB2239;
+  margin: 0 auto;
+  position: relative;
+}
+
+.usage-point-title {
+  background-color: #AB2239;
+  width: 23%;
+  padding: calc(11.5% - 17px) 0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25%;
+  left: 32px;
+}
+
+.usage-point-title p {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #fff;
+}
+
