@@ -550,6 +550,9 @@ margin-top: 16px;
 /* ------------
     voices
 ---------------*/
+#voices {
+  padding-bottom: 80px;
+}
 
 .voices-title {
   margin-bottom: 56px;
@@ -558,4 +561,67 @@ margin-top: 16px;
 .voices-title-img {
   margin: 0 auto;
   width: 50%;
+}
+
+.voices-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.voices-list li {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 80px) / 2);
+  border: 1px solid #AB2239;
+  border-radius: 16px;
+}
+
+.voices-list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:16px;
+  border-bottom: 2px solid #AB2239;
+  padding-bottom: 32px;
+}
+
+.voice-icon {
+  width: 38%;
+}
+
+.speech-babble {
+  padding: 8px;
+  border: 1px solid #AB2239;
+  border-radius: 16px;
+  position: relative;
+}
+
+.speech-babble::before {
+  content: '';
+  background-color: #AB2239;
+  height: 13px;
+  width: 13px;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  position: absolute;
+  top: calc(50% - 6.5px);
+  left: -13px;
+}
+
+.speech-babble p {
+  font-size: 20px;
+  color:#AB2239;
+  font-weight: 600;
+}
+
+.voices-list-text {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.voices-name {
+  margin-top: auto;
+  text-align: right;
 }
