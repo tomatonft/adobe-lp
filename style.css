@@ -625,3 +625,28 @@ margin-top: 16px;
   margin-top: auto;
   text-align: right;
 }
+
+/* ------------
+    faq
+---------------*/
+
+#faq {
+  background: linear-gradient(to bottom, rgba(171, 34, 57, 0.08) 0%, #ffffff 100%);
+
+}
+
+.faq-title {
+  margin-bottom: 56px;
+}
+
+.faq-title-text h3:first-child {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.faq-title-text h3:nth-child(2) {
+  font-size: 24px;
+}
+
+
