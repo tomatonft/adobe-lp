@@ -57,7 +57,6 @@ setFillHeight();//初期化
   }
 
 // -----------
-//  profile
 //  アコーディオン
 // -----------
 const dts = document.querySelectorAll('dt');

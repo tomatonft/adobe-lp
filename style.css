@@ -38,7 +38,7 @@ p {
   margin: 0 auto;
   width: calc(100% - 16px * 2);
   max-width: 960px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 section {
@@ -632,7 +632,7 @@ margin-top: 16px;
 
 #faq {
   background: linear-gradient(to bottom, rgba(171, 34, 57, 0.08) 0%, #ffffff 100%);
-
+  padding-bottom: 80px;
 }
 
 .faq-title {
@@ -649,4 +649,59 @@ margin-top: 16px;
   font-size: 24px;
 }
 
+dl > div {
+  padding: 32px;
+  border-top: 2px solid #C2C2C2;
+}
 
+dl > div:last-child {
+  border-bottom: 2px solid #C2C2C2;
+}
+
+dt {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 32px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  /* text-align: left; */
+}
+
+dd {
+  display: flex;
+  gap: 32px;
+  color: #AB2239;
+  margin-top: 32px;
+  display: none;
+}
+
+.question-mark,
+.answer-mark {
+  font-size: 24px;
+}
+
+.plus {
+  margin-left: auto;
+  transition: transform .3s;
+}
+
+dl > div.appear dd {
+  display: flex;
+  animation: .3s fadeIn;
+}
+
+dl > div.appear .plus {
+  transform: rotate(45deg);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
