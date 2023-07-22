@@ -47,22 +47,6 @@ section {
   /* padding-bottom: 104px; */
 }
 
-/* .section-title {
-  padding-bottom: 56px;
-  font-size: 48px;
-  font-weight: normal;
-  width: fit-content;
-  margin: 0 auto;
-  text-align: center;
-  letter-spacing: .2rem;
-} */
-
-/* .section-title-ja {
-  font-family: 'Noto Serif JP', serif;
-  font-size: 16px;
-  display: block;
-} */
-
 /* ------------
     header
 ---------------*/
@@ -71,7 +55,7 @@ header {
   position: fixed;
   /* top: 0; */
   height: 100px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   z-index: 100;
 }
 
@@ -132,7 +116,7 @@ header {
 }
 
 .selling-points {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin-top: 56px;
   /* margin-left: 80px; */
   /* width: calc(100% - 80px); */
@@ -179,7 +163,7 @@ header {
 }
 
 #campaign .container {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin: 80px auto;
   /* height: 917px;  */
   border: 8px solid rgba(171, 34, 57, 0.5);
@@ -705,6 +689,31 @@ dl > div.appear .plus {
     transform: none;
   }
 }
+
+/* ------------
+    application-btn
+---------------*/
+#application-btn {
+  width: 20%;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  transition: all .6s;
+  opacity: 0;
+  visibility: hidden;
+  /* outline: 1px solid red; */
+}
+
+#application-btn img {
+  filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.4));
+}
+
+#application-btn.appear {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
 /* ------------
     footer

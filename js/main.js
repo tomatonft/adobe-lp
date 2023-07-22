@@ -2,7 +2,7 @@
 
 {
   // ----------------
-  // スマホでの100vhの見え方の違いを調節（hero) 
+  // スマホでの100vhの見え方の違いを調節（main-visual) 
   // ----------------
 
   const setFillHeight = () => {
@@ -15,8 +15,8 @@ window.addEventListener('resize', setFillHeight);//画面のサイズ変動が�
 setFillHeight();//初期化
 
 // ----------------
-  // スムーススクロール
-  // ----------------
+// スムーススクロール
+// ----------------
   const anchors = document.querySelectorAll('a[href^="#"]'); 
   const header = document.querySelector('header').offsetHeight; //header高さ
   const urlHash = location.hash; // URLのアンカー（#以降の部分）を取得
@@ -71,4 +71,36 @@ dts.forEach(dt => {
       });
   });
 });
+
+// -----------
+//  application ボタン
+// -----------
+const applicationBtn = document.getElementById('application-btn');
+
+const bodyHeight = document.body.clientHeight // bodyの高さを取得
+const windowHeight = window.innerHeight // windowの高さを取得
+const bottomPoint = bodyHeight - windowHeight - header; // ページ最下部までスクロールしたかを判定するための位置を計算(headerが浮いているため追加で引く)
+
+
+window.addEventListener('scroll', () => {
+
+  const currentPos = window.pageYOffset // スクロール量を取得
+
+  //  スクロールを始めると表示
+
+  if (window.pageYOffset > 300) {
+    applicationBtn.classList.add('appear');
+  } else {
+    applicationBtn.classList.remove('appear');
+  }
+
+  //  最下部で非表示にする
+
+  if (bottomPoint <= currentPos) { // スクロール量が最下部の位置を過ぎたかどうか
+    applicationBtn.classList.remove('appear');
+  } else {
+    applicationBtn.classList.add('appear');
+  }
+});
+
 }
