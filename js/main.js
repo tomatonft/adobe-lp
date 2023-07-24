@@ -96,7 +96,7 @@ window.addEventListener('scroll', () => {
 
   //  最下部で非表示にする
 
-  if (bottomPoint <= currentPos) { // スクロール量が最下部の位置を過ぎたかどうか
+  if (bottomPoint <= currentPos || window.pageYOffset < 300) { // スクロール量が最下部の位置を過ぎたかどうか,最上部に戻ったかどうか
     applicationBtn.classList.remove('appear');
   } else {
     applicationBtn.classList.add('appear');

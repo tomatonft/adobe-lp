@@ -786,3 +786,61 @@ small {
   margin: 0 auto;
 }
 
+/* --------------------------
+        レスポンシブ　870以下
+-----------------------------*/
+
+@media screen and (max-width: 990px){
+  
+/* solution */
+
+  .point-title h4 {
+    font-size: 18px;
+  }
+  
+  .list-number span {
+    font-size: 10px;
+  }
+  
+  .list-number p {
+    font-size: 28px;
+  }
+  
+  .point-text {
+    margin-top: 8px;
+  }
+  
+  .point-text p {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 970px){
+
+  /* solution */
+  
+  .solution-title h3 {
+    font-size: 18px;
+  }
+
+  .points-list {
+    gap: 24px;
+  }
+
+  .points-list li {
+    padding: 24px 8px;
+    width: calc((100% - 24px) / 2);
+  }
+
+  .point-title {
+    padding-bottom: 8px;
+    display: block;
+  }
+
+  .point-title h4 {
+    text-align: center;
+  }
+}
+  
+
