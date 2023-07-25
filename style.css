@@ -64,7 +64,7 @@ header {
 ---------------*/
 
 #main-visual {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
   background-image: url("img/mv-model.png");
@@ -81,7 +81,8 @@ header {
 .catchphrase {
   padding-top: 100px;
   /* margin-left: 80px; */
-  width: 400px;
+  /* width: 400px; */
+  width: 50%;
 }
 
 .sub-catchphrase p {
@@ -787,11 +788,95 @@ small {
 }
 
 /* --------------------------
-        レスポンシブ　870以下
+        レスポンシブ　990以下
 -----------------------------*/
 
 @media screen and (max-width: 990px){
   
+/* main-visual */
+
+#main-visual {
+  /* outline: 1px solid red; */
+  /* min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-image: url("img/mv-model.png"); */
+  /* background-size: 50%; */
+  background-position: right top;
+  /* background-repeat: no-repeat; */
+}
+
+#main-visual .container {
+  padding-left: 0;
+  /* padding-bottom: 56px; */
+}
+
+.catchphrase {
+  /* padding-top: 100px; */
+  /* margin-left: 80px; */
+  /* width: 400px; */
+  width: 60%;
+}
+
+.sub-catchphrase {
+  text-align: center;
+  margin-top: 56px;
+}
+
+.sub-catchphrase p {
+  font-size: 20px;
+  /* font-weight: 600;
+  margin-top: 56px; */
+  /* margin-left: 80px; */
+  /* display: inline-block;
+  position: relative; */
+}
+
+.sub-catchphrase p::before,
+.sub-catchphrase p::after {
+ /* content: '';
+ position: absolute;
+ background-color: #AB2239;
+ width: 80px;
+ height: 2px;
+ top: 50%; */
+}
+
+.sub-catchphrase p::before {
+  /* left: -112px; */
+}
+
+.sub-catchphrase p::after {
+  /* right: -112px; */
+}
+
+.sub-catch-pc {
+  display: block;
+}
+
+.selling-points {
+  /* outline: 1px solid red; */
+  /* margin-top: 56px; */
+  /* margin-left: 80px; */
+  /* width: calc(100% - 80px); */
+  width:90%;
+  /* display: flex; */
+  gap: 20px;
+}
+
+.selling-points img {
+  /* display: block; */
+  width: calc((100% - 40px) / 3);
+}
+
+.sub-selling-points {
+  /* margin-top: 24px; */
+}
+
+.sub-selling-points p {
+  font-size: 14px;
+}
+
+
 /* solution */
 
   .point-title h4 {
