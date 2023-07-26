@@ -920,6 +920,14 @@ small {
   .point-title h4 {
     text-align: center;
   }
+
+
+  /* application-btn */
+
+  #application-btn {
+    width: 30%;
+  }
+
 }
   
 
