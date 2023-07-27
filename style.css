@@ -719,6 +719,10 @@ footer {
   right: 0;
 }
 
+.company-details-pc {
+  display: none;
+}
+
 footer .header-logo {
   width: 120px;
 }
@@ -1070,6 +1074,30 @@ small {
     font-size: 20px;
   }
 
+  /* footer */
+ 
+ .company-details li a {
+   font-size: 12px;
+   padding: 0 16px;
+   display: inline-block;
+   text-align: center;
+ }
+
+ .company-details-pc {
+  display: block;
+}
+ 
+ .company-info {
+   flex-direction: column;
+   align-items:flex-start;
+   gap: 16px;
+ }
+
+ address p,
+ .phone a {
+  font-size: 14px;
+ }
+ 
 
 }
   
