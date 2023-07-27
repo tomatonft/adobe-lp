@@ -467,7 +467,7 @@ margin-top: 16px;
   border: 1px solid #AB2239;
   border-radius: 50%;
   width: 20%;
-  padding: calc(10% - 35.33475px) 0;
+  padding: calc(10% - 35.3475px) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -956,12 +956,77 @@ small {
     text-align: center;
   }
 
+  /* usage */
+  
+  .usage-title h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .usage-description {
+    padding-left: 30px;
+    flex-direction: column;
+  }
+  
+  .usage-description li {
+    width: 100%;
+  }
+  
+  
+  .usage-number {
+    width: 10%;
+    padding: calc(5% - 30.6485px) 0;
+    top: -5%;
+    left: -5%;
+  }
+  
+  .usage-text {
+    font-size: 16px;
+  }
+  
+  .usage-point {
+    width: 80%;
+    padding: 56px 32px 32px;
+  }
+  
+  .usage-point-title {
+    width: 12%;
+    padding: calc(6% - 12.795px) 0;
+    top: -32px;
+    left: 32px;
+  }
+  
+  .usage-point-title p {
+    font-size: 16px;
+  }
+
 
   /* application-btn */
 
   #application-btn {
     width: 30%;
   }
+
+}
+
+@media screen and (max-width: 680px){
+
+  /* usage */
+
+  .usage-number {
+    width: 20%;
+    padding: calc(10% - 30.6485px) 0;
+    top: -10%;
+    left: -10%;
+  }
+
+  .usage-point-title {
+    width: 18%;
+    padding: calc(9% - 12.795px) 0;
+    top: -32px;
+    left: 32px;
+  }
+
 
 }
   
