@@ -38,7 +38,6 @@ p {
   margin: 0 auto;
   width: calc(100% - 16px * 2);
   max-width: 960px;
-  /* outline: 1px solid red; */
 }
 
 section {
@@ -53,9 +52,7 @@ section {
 
 header {
   position: fixed;
-  /* top: 0; */
   height: 100px;
-  /* outline: 1px solid red; */
   z-index: 100;
 }
 
@@ -64,7 +61,6 @@ header {
 ---------------*/
 
 #main-visual {
-  /* outline: 1px solid red; */
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
   background-image: url("img/mv-model.png");
@@ -80,8 +76,6 @@ header {
 
 .catchphrase {
   padding-top: 100px;
-  /* margin-left: 80px; */
-  /* width: 400px; */
   width: 50%;
 }
 
@@ -89,7 +83,6 @@ header {
   font-size: 24px;
   font-weight: 600;
   margin-top: 56px;
-  /* margin-left: 80px; */
   display: inline-block;
   position: relative;
 }
@@ -99,7 +92,6 @@ header {
  content: '';
  position: absolute;
  background-color: #AB2239;
- /* width: 80px; */
  width: 15%;
  height: 2px;
  top: 50%;
@@ -118,10 +110,7 @@ header {
 }
 
 .selling-points {
-  /* outline: 1px solid red; */
   margin-top: 56px;
-  /* margin-left: 80px; */
-  /* width: calc(100% - 80px); */
   width: 70%;
   display: flex;
   gap: 56px;
@@ -145,11 +134,9 @@ header {
 ---------------*/
 
 #campaign {
-  /* height: 1068px;    */
   position: relative;
   overflow: hidden;
   z-index: 0;
- 
 }
 
 #campaign::before {
@@ -165,9 +152,7 @@ header {
 }
 
 #campaign .container {
-  /* outline: 1px solid red; */
   margin: 80px auto;
-  /* height: 917px;  */
   border: 8px solid rgba(171, 34, 57, 0.5);
 }
 
@@ -189,7 +174,6 @@ header {
   width: 80%;
   background-color: #fff;
   margin: 24px auto 56px auto;
-  /* text-align: center; */
   padding: 32px 0;
   border-radius: 16px;
 }
@@ -197,7 +181,6 @@ header {
 .products h3 {
   font-size: 24px;
   font-weight: 400;
-  /* padding-top: 32px; */
   text-align: center;
 }
 
@@ -212,7 +195,6 @@ header {
 
 .products-img {
   margin: 16px auto 0 auto;
-  /* width: 70%; */
   position: relative;
 }
 
@@ -222,14 +204,13 @@ header {
 }
 
 .campaign-text {
- width: 150px;
+  width: 150px;
   position: absolute;
   top: 56px;
   left: 8px;
 }
 
 .products-price {
-  /* width: 70%; */
   margin: 0 auto;
   position: relative;
 }
@@ -285,7 +266,6 @@ margin-top: 16px;
 .section-title h3 {
   width: fit-content;
   margin: 0 auto;
-  /* color: #fff; */
   font-weight: 400;
 }
 
@@ -301,7 +281,6 @@ margin-top: 16px;
 }
 
 .troubles-inner {
-  /* margin: 16px auto 80px auto; */
   margin-top: 16px;
   padding-left: 40px;
   display: flex;
@@ -315,7 +294,6 @@ margin-top: 16px;
 }
 
 .troubles-lists li {
-  /* outline: 1px solid red; */
   width: fit-content;
   text-align: center;
   position: relative;
@@ -412,7 +390,6 @@ margin-top: 16px;
 
 .list-number p {
   font-size: 32px;
-  /* transform: translateX(-4px); */
 }
 
 .point-text {
@@ -473,8 +450,6 @@ margin-top: 16px;
   align-items: center;
   justify-content: center;
   position: absolute;
-  /* top: -44px;
-  left: -44px; */
   top: -10%;
   left: -10%;
 }
@@ -627,12 +602,10 @@ dl > div:last-child {
 
 dt {
   display: flex;
-  /* justify-content: space-between; */
   gap: 32px;
   align-items: center;
   cursor: pointer;
   user-select: none;
-  /* text-align: left; */
 }
 
 dd {
@@ -676,6 +649,7 @@ dl > div.appear .plus {
 /* ------------
     application-btn
 ---------------*/
+
 #application-btn {
   width: 20%;
   position: fixed;
@@ -684,7 +658,6 @@ dl > div.appear .plus {
   transition: all .6s;
   opacity: 0;
   visibility: hidden;
-  /* outline: 1px solid red; */
 }
 
 #application-btn img {
@@ -725,7 +698,6 @@ footer {
 }
 
 .company-details li {
-  /* outline:  1px solid red; */
   position: relative;
 }
 
@@ -931,7 +903,6 @@ small {
     margin-top: 64px;
   }
   
-
   /* solution */
   
   .solution-title h3 {
@@ -972,7 +943,6 @@ small {
     width: 100%;
   }
   
-  
   .usage-number {
     width: 10%;
     padding: calc(5% - 30.6485px) 0;
@@ -1000,6 +970,43 @@ small {
     font-size: 16px;
   }
 
+  /* voices */
+  
+  .voices-title-img {
+    width: 80%;
+  }
+  
+  .voices-list {
+    flex-direction: column;
+    gap: 56px;
+  }
+  
+  .voices-list li {
+    padding: 24px 16px;
+    width: 100%;
+  }
+  
+  .voices-list-heading {
+    justify-content: flex-start;
+  }
+  
+  .voice-icon {
+    width: 20%;
+  }
+  
+  .speech-babble p {
+    font-size: 16px;
+  }
+  
+  .voices-list-text {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  
+  .voices-name {
+    font-size: 14px;
+  }
+
 
   /* application-btn */
 
@@ -1013,6 +1020,11 @@ small {
 
   /* usage */
 
+  .usage-description {
+    padding-left: 48px;
+    /* flex-direction: column; */
+  }
+
   .usage-number {
     width: 20%;
     padding: calc(10% - 30.6485px) 0;
@@ -1025,6 +1037,12 @@ small {
     padding: calc(9% - 12.795px) 0;
     top: -32px;
     left: 32px;
+  }
+
+  /* voices */
+
+  .voice-icon {
+    width: 35%;
   }
 
 
