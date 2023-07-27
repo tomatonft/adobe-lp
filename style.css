@@ -1045,6 +1045,31 @@ small {
     width: 35%;
   }
 
+  /* faq */
+  
+  .faq-title-text h3:first-child {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  
+  .faq-title-text h3:nth-child(2) {
+    font-size: 18px;
+  }
+  
+  dl > div {
+    padding: 16px 0;
+  }
+
+  dt > p,
+  dd > p {
+    font-size: 14px;
+  }
+  
+  .question-mark,
+  .answer-mark {
+    font-size: 20px;
+  }
+
 
 }
   
