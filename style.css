@@ -258,10 +258,6 @@ margin-top: 16px;
 ---------------*/
 
 #troubles {
-  /* height: 786px;  */
-  /* 仮の高さ */
-  /* background-image: url("img/troubles-bg.jpg"); */
-  /* filter: saturate(70%) brightness(50%); */
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -894,6 +890,45 @@ small {
   
   .off-price {
     width: 60px;
+  }
+
+  /* troubles */
+
+  #troubles::before {
+    background-position: 35% top;
+  }
+  
+  .troubles-title h3:first-child {
+    font-size: 28px;
+  }
+  
+  .troubles-title h3:nth-child(2) {
+    font-size: 20px;
+  }
+  
+  .troubles-inner {
+    margin-top: 320px;
+    padding-left: 0;
+  }
+  
+  .troubles-lists {
+    gap: 96px;
+  }
+  
+  .troubles-lists p {
+    font-size: 14px;
+  }
+  
+  .troubles-lists span {
+    font-size: 20px;
+  }
+  
+  .troubles-lists-img {
+    width: 128px;
+  }
+  
+  .troubles-lists-right {
+    margin-top: 64px;
   }
   
 
