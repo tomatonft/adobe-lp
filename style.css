@@ -54,6 +54,10 @@ header {
   z-index: 100;
 }
 
+.header-logo img {
+  height: 100px;
+}
+
 /* ------------
     main-visual
 ---------------*/
@@ -741,6 +745,10 @@ small {
 @media screen and (max-width: 990px){
   
 /* main-visual */
+
+.header-logo img {
+  height: 80px;
+}
 
 #main-visual {
   background-position: right top;
